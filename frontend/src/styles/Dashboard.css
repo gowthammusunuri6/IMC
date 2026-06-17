@@ -1,0 +1,88 @@
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dashboard-header h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Complaint Grid */
+.complaint-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.complaint-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #667eea;
+  padding: 2rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.submit-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .complaint-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header h2 {
+    font-size: 2rem;
+  }
+}
